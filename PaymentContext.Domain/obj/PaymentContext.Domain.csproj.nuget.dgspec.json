@@ -1,24 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitRepos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {}
+    "C:\\Projects\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {}
   },
   "projects": {
-    "C:\\GitRepos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
+    "C:\\Projects\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitRepos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
         "projectName": "PaymentContext.Domain",
-        "projectPath": "C:\\GitRepos\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
-        "packagesPath": "C:\\Users\\ricardo.ribeiro\\.nuget\\packages\\",
-        "outputPath": "C:\\GitRepos\\PaymentContext\\PaymentContext.Domain\\obj\\",
+        "projectPath": "C:\\Projects\\PaymentContext\\PaymentContext.Domain\\PaymentContext.Domain.csproj",
+        "packagesPath": "C:\\Users\\Ricardo Ribeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\PaymentContext\\PaymentContext.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ricardo.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Ricardo Ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -30,8 +32,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\GitRepos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
-                "projectPath": "C:\\GitRepos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj"
+              "C:\\Projects\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
+                "projectPath": "C:\\Projects\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj"
               }
             }
           }
@@ -53,28 +55,36 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GitRepos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
+    "C:\\Projects\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitRepos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
+        "projectUniqueName": "C:\\Projects\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
         "projectName": "PaymentContext.Shared",
-        "projectPath": "C:\\GitRepos\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
-        "packagesPath": "C:\\Users\\ricardo.ribeiro\\.nuget\\packages\\",
-        "outputPath": "C:\\GitRepos\\PaymentContext\\PaymentContext.Shared\\obj\\",
+        "projectPath": "C:\\Projects\\PaymentContext\\PaymentContext.Shared\\PaymentContext.Shared.csproj",
+        "packagesPath": "C:\\Users\\Ricardo Ribeiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\PaymentContext\\PaymentContext.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ricardo.ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Ricardo Ribeiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -105,10 +115,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
