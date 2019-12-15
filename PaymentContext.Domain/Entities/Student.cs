@@ -9,24 +9,28 @@ namespace PaymentContext.Domain.Entities
     {
 
         private List<Subscription> _subscriptions;
-        public Student(Name name, Document document, Email email)
+        public Student(Name name, Document document, Email email, Address address)
         {
             Name = name;
             Document = document;
             Email = email; 
-            _subscriptions = new List<Subscription>();       
+            Address = address;
+
+            _subscriptions = new List<Subscription>();  
+
+            AddNotifications(Name, Document, Email);     
         }
 
         public Name Name{get; private set;}
         public Document Document { get; private set; }
         public Email Email {get; private set;}
-        public string Address {get; private set;}
+        public Address Address {get; private set;}
         public IReadOnlyCollection<Subscription> Subscriptions {get {return _subscriptions;}}
 
 
-        public void SetAddress(string address)
+        public void SetAddress(Address address)
         {
-           Address = address.Equals(string.Empty)? string.Empty: address.ToUpper();
+           Address = address;
         }
         
         public void AddSubscription(Subscription subscription)
