@@ -19,8 +19,8 @@ namespace PaymentContext.Domain.Entities
                 .HasMaxLen(Street, 200, "Address.Street", "Rua deve ter no máximo 200 caracteres")
                 .HasMinLen(City, 3, "Address.City", "Cidade  deve ter no mínimo 3 caracteres")
                 .HasMaxLen(City, 50, "Address.City", "Cidade deve ter no máximo 50 caracteres")
-                .HasExactLengthIfNotNullOrEmpty(PostalCode, 8 ,"Address.PostalCode", "CEP deve ter 8 caracteres" )
-                .HasExactLengthIfNotNullOrEmpty(State, 2, "Address.State", "Estado deve ter 2 caracteres")
+                .HasExactLengthIfNotNullOrEmpty("Address.PostalCode", 8 ,"Address.PostalCode", "CEP deve ter 8 caracteres" )
+                .HasExactLengthIfNotNullOrEmpty("Address.State", 2, "Address.State", "Estado deve ter 2 caracteres")
                 .HasMinLen(Country, 3, "Address.Country", "Pais deve ter no mínimo 3 caractres")
                 .HasMaxLen(Country,50, "Address.Country", "Pais deve ter no máximo 50 caracteres")
             );

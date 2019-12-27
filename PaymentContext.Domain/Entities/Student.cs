@@ -27,12 +27,6 @@ namespace PaymentContext.Domain.Entities
         public Address Address {get; private set;}
         public IReadOnlyCollection<Subscription> Subscriptions {get {return _subscriptions;}}
 
-
-        public void SetAddress(Address address)
-        {
-           Address = address;
-        }
-        
         public void AddSubscription(Subscription subscription)
         {       
             TurnOffAllSubscriptions();
